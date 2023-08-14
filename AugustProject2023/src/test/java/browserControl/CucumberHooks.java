@@ -3,7 +3,7 @@ package browserControl;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-public class CucumberHooks extends WebConnector{
+public class CucumberHooks extends WebConnector {
     @Before
     public void setup() {
         openBrowser();
@@ -13,4 +13,5 @@ public class CucumberHooks extends WebConnector{
     public void teardown() {
         closeBrowser();
     }
+
 }
