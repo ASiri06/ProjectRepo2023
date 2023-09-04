@@ -5,9 +5,9 @@ public class FormAuthenticationPage extends WebConnector {
 
     /**********************Locators**********************/
 
-    private String usernameFieldXPath = "//input[@id='user-name']";
-    private String passwordFieldXPath = "//input[@id='password']";
-    private String loginButtonXPath = "//input[@id='login-button']";
+     String usernameFieldXPath = "//input[@id='user-name']";
+     String passwordFieldXPath = "//input[@id='password']";
+     String loginButtonXPath = "//input[@id='login-button']";
 
     /***************Setters and Getters *****************/
 

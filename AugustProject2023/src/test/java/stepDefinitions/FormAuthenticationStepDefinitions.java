@@ -37,6 +37,23 @@ public class FormAuthenticationStepDefinitions extends WebConnector {
 
         }
 
+        @When ("the user login with {string} username and {string} password")
+    public void the_user_login_with_username_and_password(String username, String password){
+        formAuthPage.setUserName(username);
+        formAuthPage.setPassword(password);
+        formAuthPage.clickLogin();
+        }
+    @Then("the user see text {string} on the page")
+    public void the_user_see_text (String expectedText){
+        Assert.assertTrue(driver.getPageSource().contains(expectedText));
+
+    }
+
 
 
     }
+
+
+
+
+
