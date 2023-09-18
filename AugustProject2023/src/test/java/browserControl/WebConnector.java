@@ -15,10 +15,11 @@ public class WebConnector {
             FirefoxOptions fo = new FirefoxOptions();
             if (ConstantUtils.BROWSER_TYPE.equalsIgnoreCase("headless")) {
                 fo.addArguments("--headless");
-                fo.addArguments("start-maximized");
-                driver = new FirefoxDriver(fo);
 
-            }
+
+
+            }fo.addArguments("start-maximized");
+            driver = new FirefoxDriver(fo);
 
 
             //define firefox driver
@@ -28,11 +29,11 @@ public class WebConnector {
             ChromeOptions co = new ChromeOptions();
             if (ConstantUtils.BROWSER_TYPE.equalsIgnoreCase("headless")) {
                co.addArguments("--headless");
-                co.addArguments("start-maximized");
 
-                driver = new ChromeDriver(co);
 
-            }
+            }co.addArguments("start-maximized");
+
+            driver = new ChromeDriver(co);
 
 
 

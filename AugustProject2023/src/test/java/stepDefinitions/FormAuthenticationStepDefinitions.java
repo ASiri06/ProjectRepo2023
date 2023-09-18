@@ -23,7 +23,8 @@ public class FormAuthenticationStepDefinitions extends WebConnector {
 
 
     @When("the user enters and {string} in password field")
-    public void the_user_enters_and_secret_sauce_in_password_field(String password) { formAuthPage.setPassword(password);}
+    public void the_user_enters_and_secret_sauce_in_password_field(String password) {
+        formAuthPage.setPassword(password);}
 
 
         @When("the user click on the login button")
