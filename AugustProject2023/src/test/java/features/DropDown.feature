@@ -11,9 +11,10 @@ Feature: Verify dropdown options
       When the user select "<option>" from the dropdown list
       Then the user should see the "<option>" option is selected in the dropdown list
 
+
       Examples:
-      |option|
-      | Name (A to Z)|
-      | Name (Z to A)|
-      | Price (low to high)|
-      | Price (high to low)|
+      |option|Expected text|
+      | Name (A to Z)|     |
+      | Name (Z to A)|     |
+      | Price (low to high)||
+      | Price (high to low)||
