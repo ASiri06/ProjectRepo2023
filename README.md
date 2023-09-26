@@ -34,7 +34,7 @@ Once we done that we had to make a BDD framework and created the packages in srs
 
 
 
-  # JENKINS
+  # JENKINS and cucumber reports configuration
 
 
 # Plugins to install in Jenkins:
