@@ -8,7 +8,7 @@ public class BasicAuthStepDef extends WebConnector {
 
     private BasicAuthPageObjects basicAuthPage = new BasicAuthPageObjects();
 
-/@Given("the user should see {string}")
+@Given("the user should see {string}")
     public void the_user_should_see(String string) {
 
     }
