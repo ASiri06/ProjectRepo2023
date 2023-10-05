@@ -22,7 +22,7 @@ public class AddRemoveElementsStepDef extends WebConnector {
     }
     @Given("the user clicks on the {string} link")
     public void the_user_clicks_on_the_link(String linkText) {
-        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(By.linkText(linkText))).click();
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(By.partialLinkText(linkText))).click();
 
     }
     @Given("the user can see {string} text")

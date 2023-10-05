@@ -12,6 +12,8 @@ public class BasePage extends WebConnector {
     public static WebElement findElementByXpath(int time, String xpath){
         return new WebDriverWait(driver, Duration.ofSeconds(time)).until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));}
 
+    public static void findElement(By name) {
+    }
 }
 
 

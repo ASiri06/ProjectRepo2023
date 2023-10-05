@@ -14,7 +14,7 @@ public class WebConnector {
         if (ConstantUtils.BROWSER_NAME.equalsIgnoreCase("firefox")) {
             FirefoxOptions fo = new FirefoxOptions();
             if (ConstantUtils.BROWSER_TYPE.equalsIgnoreCase("headless")) {
-                fo.addArguments("--headless");
+               // fo.addArguments("--headless");
 
 
 
@@ -28,7 +28,7 @@ public class WebConnector {
         } else {
             ChromeOptions co = new ChromeOptions();
             if (ConstantUtils.BROWSER_TYPE.equalsIgnoreCase("headless")) {
-                co.addArguments("--headless");
+              //  co.addArguments("--headless");
 
 
             }co.addArguments("start-maximized");
@@ -37,16 +37,16 @@ public class WebConnector {
 
 
 
-            //define chrome driver
+           // define chrome driver
 
 
         }
-        // If using implicit wait is has to be defined here.
-//        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+         //If using implicit wait is has to be defined here.
+        //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     public static void closeBrowser() {
-        driver.quit();
+      //  driver.quit();
     }
 }
 
